@@ -18,7 +18,10 @@ const Login = () => {
         signInByGithub,
         handleEmail,
         handlePassword,
-        setUser } = useAuth();
+        setUser,
+        error,
+        setError,
+    } = useAuth();
 
     const location = useLocation();
     const hostory = useHistory();
@@ -28,6 +31,9 @@ const Login = () => {
             .then(result => {
                 hostory.push(redirectURL);
             })
+            .catch(error => {
+                setError(error.message);
+            })
     }
 
     const handleEmailPassSignIn = (e) => {
@@ -36,6 +42,9 @@ const Login = () => {
             .then((result) => {
                 setUser(result.user);
                 hostory.push(redirectURL);
+            })
+            .catch(error => {
+                setError(error.message);
             })
     }
 
@@ -64,6 +73,7 @@ const Login = () => {
                                 <input type="email" onBlur={handleEmail} name="email" id="email" placeholder='Please enter your email...' />
                                 <input type="password" onBlur={handlePassword} name="pass" id="pass" placeholder='Please enter your password...' />
                                 <button type="submit">Login</button>
+                                <div>{error}</div>
                                 <p className='already-have-ac-txt'>New Here? <Link to='/signup'>Sign up</Link> </p>
                             </form>
                             <button onClick={handleGoogleSignIn} className='google-btn'>{gIcon} Login with Google</button>
