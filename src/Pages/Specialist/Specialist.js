@@ -17,9 +17,9 @@ const Specialist = () => {
                 <h2>Angela Brawn</h2>
                 <p className="credibly">Credibly reintermediate backend ideas for cross-platform models. Continually reintermediate integrated processes through technically sound intellectual capital. Holistically foster superior methodologies without market-driven best practices.</p>
             </div>
-            <Container className="special-top">
+            <Container className="special-top my-4">
                 <Row>
-                    <Col xs={12} md={6} className="special-pera">
+                    <Col xs={12} md={6} className="special-pera mt-4">
                         <div className="holistically">
                             <p>Credibly reintermediate backend ideas for cross-platform models. Continually reintermediate integrated processes through technically sound intellectual capital. Holistically foster superior methodologies without market-driven best practices.</p>
                             <p><small>
