@@ -21,7 +21,7 @@ form.loginForm input {
     margin-bottom: 20px;
     outline: none;
     border: navajowhite;
-    color: #162F62;
+    color: paleturquoise;
     padding: 8px 10px;
     border-radius: 3px;
     box-shadow: 5px 11px 14px -4px #7dd6f6;
@@ -31,7 +31,7 @@ form.loginForm input {
 button.google-btn,
 button.github-btn{
     text-decoration: none;
-    background-color: #162F62;
+    background-color: #5AC8C9;
     color: #FFFFFF;
     font-size: 15px;
     font-weight: 600;
@@ -46,22 +46,22 @@ button.github-btn{
 .loginForm button:hover, 
 button.google-btn:hover,
 button.github-btn:hover{
-    border: 1px solid #162F62;
+    border: 1px solid #5AC8C9;
     background-color: transparent;
-    color: #162F62;
+    color: #5AC8C9;
 }
 
 p.already-have-ac-txt {
     margin-top: 20px;
-    color: #162F62;
+    color: #5AC8C9;
     font-size: 16px;
     font-weight: 500;
 }
 
 p.already-have-ac-txt a {
     text-decoration: none;
-    color: #162F62;
-    border-bottom: 1px solid #162F62;
+    color: #5AC8C9;
+    border-bottom: 1px solid paleturquoise;
     padding-bottom: 2px;
 }
 

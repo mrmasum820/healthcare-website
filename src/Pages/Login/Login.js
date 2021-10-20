@@ -54,6 +54,9 @@ const Login = () => {
                 setUser(result.user);
                 hostory.push(redirectURL);
             })
+            .catch(error => {
+                setError(error.message);
+            })
     }
 
     return (
@@ -73,7 +76,7 @@ const Login = () => {
                                 <input type="email" onBlur={handleEmail} name="email" id="email" placeholder='Please enter your email...' />
                                 <input type="password" onBlur={handlePassword} name="pass" id="pass" placeholder='Please enter your password...' />
                                 <button type="submit">Login</button>
-                                <div>{error}</div>
+                                <div>{error && <p>Email or password not matched <br /> {error}</p>}</div>
                                 <p className='already-have-ac-txt'>New Here? <Link to='/signup'>Sign up</Link> </p>
                             </form>
                             <button onClick={handleGoogleSignIn} className='google-btn'>{gIcon} Login with Google</button>

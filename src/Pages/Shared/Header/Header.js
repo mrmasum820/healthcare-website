@@ -28,10 +28,10 @@ const Header = () => {
                     <Row>
                         <Col md={4} sm={4} xs={12}>
                             <ul className="social-icon d-flex">
-                                <li><Link to="/facebook.com">{fbIcon}</Link></li>
-                                <li><Link to="/twitter.com">{twitIcon}</Link></li>
-                                <li><Link to="/pinterest.com">{pintrstIcon}</Link></li>
-                                <li><Link to="/instagram.com">{instaIcon}</Link></li>
+                                <li><Link to="/home">{fbIcon}</Link></li>
+                                <li><Link to="/home">{twitIcon}</Link></li>
+                                <li><Link to="/home">{pintrstIcon}</Link></li>
+                                <li><Link to="/home">{instaIcon}</Link></li>
                             </ul>
                         </Col>
                         <Col md={8} sm={8} xs={12} className='login-signup text-end'>
