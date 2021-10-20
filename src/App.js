@@ -1,3 +1,4 @@
+//import files from another folder
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import './App.css';
 import Home from './Pages/Home/Home/Home';
@@ -16,6 +17,7 @@ import PrivateRoute from './Pages/PrivateRoute/PrivateRoute';
 function App() {
   return (
     <div className="App">
+      {/* auth provider with router */}
       <AuthProvider>
         <BrowserRouter>
           <Header></Header>
@@ -29,6 +31,7 @@ function App() {
               <Home></Home>
             </Route>
 
+            {/* private route for two pages */}
             <PrivateRoute path="/servicedetail/:serviceID">
               <ServiceDetail></ServiceDetail>
             </PrivateRoute>
@@ -45,6 +48,7 @@ function App() {
               <Contact></Contact>
             </Route>
 
+            {/* login, signup route call here */}
             <Route path="/login">
               <Login></Login>
             </Route>
@@ -52,11 +56,13 @@ function App() {
               <Signup></Signup>
             </Route>
 
+            {/* not found page here */}
             <Route path="*">
               <NotFound></NotFound>
             </Route>
           </Switch>
 
+          {/* footer call outside of switch */}
           <Footer></Footer>
         </BrowserRouter>
       </AuthProvider>
