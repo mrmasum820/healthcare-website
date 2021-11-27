@@ -5,7 +5,7 @@
 
 - Live link of the project(https://healthcare-website-2a686.web.app/)
 
-- code link here(https://github.com/Programming-Hero-Web-Course3/healthcare-related-website-mrmasum820)
+- code link here(https://github.com/mrmasum820/healthcare-website)
 
 ## Available Scripts
 
